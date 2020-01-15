@@ -1,21 +1,27 @@
-// 组件总入口文件，单一页面
-
 <template>
- <div id="app">
-    <router-view></router-view>
-    <Footer/>
- </div>
+  <div id="app">
+    <img alt="Vue logo" src="./assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  </div>
 </template>
 
 <script>
-import Footer from './pages/Footer/Footer'
+import HelloWorld from './components/HelloWorld.vue'
+
 export default {
-  components:{
-    Footer,
+  name: 'app',
+  components: {
+    HelloWorld
   }
 }
 </script>
 
-<style lang="stylus" scoped>
-
+<style lang="stylus">
+#app
+  font-family 'Avenir', Helvetica, Arial, sans-serif
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  text-align center
+  color #2c3e50
+  margin-top 60px
 </style>

@@ -18,5 +18,7 @@
             width 0.6rem
             height 0.6rem
             border-radius 50%
-    
+        .top
+            p 
+                font-size 0.15rem
 </style>
